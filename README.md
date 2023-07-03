@@ -58,7 +58,7 @@ module Mothership
       }
     end
 
-    def self.statistics
+    def self.self_evaluate
       require "naive_bayes"
 
       outcomes = NaiveBayes.new(:worst, :nuetral, :best)
