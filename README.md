@@ -81,6 +81,22 @@ module Mothership
         puts "For outcome: #{current_outcome[row]}, the current outcome is: #{result[0]}."
 
         row = row + 1
+
+        # Imagined a compromise path that is neither ideal or tragic.
+        open("_imaginedpath/brains/self_evaluation.aiml", "w") { |f|
+          segment_1 = character_fate[1].strip
+          segment_2 = dating_outcome[0].strip
+
+          aiml = "<?xml version = '1.0' encoding = 'UTF-8'?>
+<aiml version = '1.0.1' encoding = 'UTF-8'>
+  <category>
+    <pattern>What the result of the current outcome?</pattern>
+    <template>For #{current_outcome[row]}, the current outcome is: #{result[0]}.</template>
+  </category>
+</aiml>"
+
+          f.puts aiml
+        }
       end
     end
   end
