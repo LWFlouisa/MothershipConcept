@@ -94,8 +94,8 @@ if    current_function == "chatbot"
   FunctionList::Bot.chatbot
 elsif current_function == "outcome evaluator"
   FunctionList::Bot.outcome_evaluator
-elsif current_function == "reasoning"
-  FunctionList::Bot.reasoning
+elsif current_function == "self evaluate"
+  FunctionList::Bot.self_evaluate
 else
   puts "Function not yet defined..."
 end
