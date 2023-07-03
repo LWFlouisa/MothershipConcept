@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<aiml version = '1.0.1' encoding = 'UTF-8'>
+  <category>
+    <pattern>What are you currently doing?</pattern>
+    <template>You have not given me a specific function.</template>
+  </category>
+</aiml>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<aiml version = '1.0.1' encoding = 'UTF-8'>
+  <category>
+    <pattern>What the result of the current outcome?</pattern>
+    <template>For , the current outcome is: nuetral with a probability of 0.125.</template>
+  </category>
+</aiml>

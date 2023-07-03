@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<aiml version = '1.0.1' encoding = 'UTF-8'>
+  <category>
+    <pattern>What is the least good outcome that is not the worst?</pattern>
+    <template>[ charlotte lived ] [ never dated player ]
+      <system>swipl outcome_consultant.pl</system>
+    </template>
+  </category>
+</aiml>
