@@ -1,5 +1,5 @@
 # Mothership Concept
-A bot that uses the mothership and a narrow Ai bot carrier as an analogy.
+Suppose you had a mothership / narrow AGI carrier. It would act as a larger metaprogram that would deliver samller more specific narrow AI applications for different use cases. This is dervied from the naval concept of the "aircraft carrier" that carries airplanes on the open sea.
 
 ### Proof Of Concept
 ~~~ruby
