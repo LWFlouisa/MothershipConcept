@@ -1,4 +1,4 @@
-# MothershipConcept
+# Mothership Concept
 A bot that uses the mothership and a narrow Ai bot carrier as an analogy.
 
 ### Proof Of Concept
