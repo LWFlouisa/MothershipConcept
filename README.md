@@ -64,14 +64,8 @@ module Mothership
   end
 end
 
-initializer = File.read("_data/ainput/input.txt")
-
-function = [
-  "chatbot",
-  "outcome evaluator",
-  "statistics",
-]
-
+initializer      = File.read("_data/ainput/input.txt")
+function         = File.readlines("_functionlist/functions/activities.txt")
 current_function = function[initializer]
 
 if    current_function == "chatbot"
