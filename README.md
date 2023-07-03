@@ -3,13 +3,6 @@ A bot that uses the mothership and a narrow Ai bot carrier as an analogy.
 
 ### Proof Of Concept
 ~~~ruby
-require "humanist_errors"
-
-require 'humanist_errors'
-include HumanistErrors
-
-with_human_errors do
-
 module Mothership
   class BotCarrier
     def self.chatbot
@@ -167,6 +160,4 @@ open("_data/ainput/input.txt", "w") { |f|
 
   f.puts initializer
 }
-
-end
 ~~~
