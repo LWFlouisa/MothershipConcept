@@ -59,7 +59,29 @@ module Mothership
     end
 
     def self.statistics
-      system("temp")
+      require "naive_bayes"
+
+      outcomes = NaiveBayes.new(:worst, :nuetral, :best)
+
+      # Train on outcome possibilities.
+      outcomes.train(:worst,    "[ charlotte dies ] [ never dated player ]",   "worst")
+      outcomes.train(:nuetral,        "[ charlotte dies ] [ dated player ]", "nuetral")
+      outcomes.train(:nuetral, "[ charlotte lives ] [ never dated player ]", "nuetral")
+      outcomes.train(:best,          "[ charlotte lives ] [ dated player ]",    "best")
+
+      current_outcomes = File.readlines("_imaginedpath/outcomes/nuetral_outcome.txt")
+
+      loop_limit = current_outcomes.size.to_i
+
+      row = 0
+
+      loop_limit.times do
+        result = outcomes.classify(*current_outcomes[row])
+
+        puts "For outcome: #{current_outcome[row]}, the current outcome is: #{result[0]}."
+
+        row = row + 1
+      end
     end
   end
 end
