@@ -113,6 +113,15 @@ elsif current_function == "outcome evaluator"
 elsif current_function == "self evaluate"
   FunctionList::Bot.self_evaluate
 else
-  puts "Function not yet defined..."
+  open("_imaginedpath/brains/commentary.aiml", "w") { |f|
+          aiml = "<?xml version = '1.0' encoding = 'UTF-8'?>
+<aiml version = '1.0.1' encoding = 'UTF-8'>
+  <category>
+    <pattern>What are you currently doing?</pattern>
+    <template>You have not given be a specific function.</template>
+  </category>
+</aiml>"
+
+  }
 end
 ~~~
